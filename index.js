@@ -96,12 +96,14 @@ let passwordOne = document.querySelector("#pw-1");
 let passwordTwo = document.querySelector("#pw-2");
 
 function generatePW() {
-  passwordOne.textContent = "";
-  passwordTwo.textContent = "";
+  passwordOneString = "";
+  passwordTwoString = "";
   for (let i = 0; i < 15; i++) {
-    passwordOne.textContent +=
+    passwordOneString +=
       characters[Math.floor(Math.random() * characters.length)];
-    passwordTwo.textContent +=
+    passwordTwoString +=
       characters[Math.floor(Math.random() * characters.length)];
   }
+  passwordOne.textContent = passwordOneString;
+  passwordTwo.textContent = passwordTwoString;
 }
