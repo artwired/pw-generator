@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Karla:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Password Generator | Brad Cole</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="app-wrapper">
+      <h1 id="title-txt">
+        Generate a <span id="highlight-txt">random password</span>
+      </h1>
+      <p id="supporting-txt">Never use an insecure password again.</p>
+      <button id="generate-pw-btn" onclick="generatePW()">
+        Generate Password
+      </button>
+      <div id="pws-wrapper">
+        <div id="pw-1"></div>
+        <div id="pw-2"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
