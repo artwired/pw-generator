@@ -71,7 +71,7 @@ body {
 }
 #pw-1,
 #pw-2 {
-  width: 211px;
+  min-width: 211px;
   height: 39px;
   border-radius: 6px;
   background-color: #273549;
@@ -93,4 +93,19 @@ body {
   width: 18px;
   height: 18px;
   margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  #app-wrapper {
+    width: 90%;
+  }
+  #pws-wrapper {
+    flex-direction: column;
+  }
+  .copy-btn {
+    right: -10;
+  }
+  #title-txt {
+    font-size: 38px;
+  }
 }
