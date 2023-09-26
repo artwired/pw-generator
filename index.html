@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/02c9c03c70.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Karla:wght@800&display=swap"
       rel="stylesheet"
@@ -23,8 +27,18 @@
         Generate Password
       </button>
       <div id="pws-wrapper">
-        <div id="pw-1"></div>
-        <div id="pw-2"></div>
+        <div class="pw-field-wrapper">
+          <div id="pw-1"></div>
+          <div class="copy-btn" onclick="copyPwOne()">
+            <img class="copy-icon" src="copy-icon.png" />
+          </div>
+        </div>
+        <div class="pw-field-wrapper">
+          <div id="pw-2"></div>
+          <div class="copy-btn" onclick="copyPwTwo()">
+            <img class="copy-icon" src="copy-icon.png" />
+          </div>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>

@@ -107,3 +107,22 @@ function generatePW() {
   passwordOne.textContent = passwordOneString;
   passwordTwo.textContent = passwordTwoString;
 }
+
+function copyPwOne() {
+  let passwordOneTextEl = document.getElementById("pw-1").innerHTML;
+  if (passwordOneTextEl === "") {
+    console.log("please generate a password to copy");
+  } else {
+    navigator.clipboard.writeText(passwordOneTextEl);
+    console.log("password copied to clipboard");
+  }
+}
+function copyPwTwo() {
+  let passwordTwoTextEl = document.getElementById("pw-2").innerHTML;
+  if (passwordTwoTextEl === "") {
+    console.log("please generate a password to copy");
+  } else {
+    navigator.clipboard.writeText(passwordTwoTextEl);
+    console.log("password copied to clipboard");
+  }
+}
