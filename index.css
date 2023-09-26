@@ -87,6 +87,7 @@ body {
   border-radius: 50%;
   top: 55px;
   right: -10px;
+  cursor: pointer;
 }
 .copy-icon {
   width: 18px;
