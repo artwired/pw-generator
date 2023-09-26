@@ -106,6 +106,7 @@ body {
     right: -10;
   }
   #title-txt {
+    width: 300px;
     font-size: 34px;
   }
 }
